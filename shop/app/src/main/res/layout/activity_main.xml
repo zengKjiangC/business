@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 天气 -->
+    <View
+        android:id="@+id/view_weather"
+        android:background="@drawable/sun"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <!--不更换的主页面 -->
+    <View
+        android:background="@drawable/main_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        />
+
+    <!-- 下雪场景-->
+    <com.ck.shop.weather.SnowView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <!-- 透明灰色背景 -->
+    <View
+        android:id="@+id/view_whole_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7000"
+        />
+
+    <!-- 菜单 -->
+    <include
+        layout="@layout/layout_menu"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        />
+</RelativeLayout>
